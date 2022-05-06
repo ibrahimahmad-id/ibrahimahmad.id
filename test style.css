@@ -1,0 +1,64 @@
+/**fx-img-1**/
+.fx-img-1 .et_pb_image:hover img,
+.fx-img-1 .et_pb_image_wrap:hover img,
+.fx-img-1 a:hover img {
+    transform: scale(1.5); 
+    transition: all .2s ease-in-out !important;
+  	filter: drop-shadow(0 -5mm 20mm rgba(0,0,0,0.53));
+}
+
+.fx-img-1 a:active img {
+		pointer-events: none;
+}
+
+.fx-img-1,
+.fx-img-1 a {
+    overflow: visible;
+}
+
+.fx-img-1 .et_pb_image img,
+.fx-img-1 .et_pb_image_wrap img,
+.fx-img-1 a img {
+    transition: all .2s ease-in-out !important;
+}
+
+.fx-img-1 .et_pb_gallery_items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/**End of fx-img-1**/
+
+/*Hide right space bug on mobile*/
+@media only screen and (max-width: 768px){
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+}
+/*End of Hide right space bug on mobile*/
+
+/*Hide border and spacing on navigation module*/
+.et_full_width_portfolio_page .nav-single {
+	border-top: hidden !important;
+	padding-top: 0px !important;
+}
+/*End of hide border and spacing on navigation module*/
+
+/*Multiple Button on Single Line*/
+.pa-inline-buttons .et_pb_button_module_wrapper {
+    display: inline-block;
+	margin-left: 10px !important;
+}
+.pa-inline-buttons {
+    text-align: center !important;
+}
+/*End of Multiple Button on Single Line*/
